@@ -7,6 +7,7 @@ global using FluentValidation;
 global using BuildingBlocks.Exceptions;
 global using BuildingBlocks.Behaviors;
 global using Basket.API.Models;
+global using Basket.API.Dtos;
 global using Catalog.API.Exceptions;
 global using Basket.API.Data;
 global using BuildingBlocks.Exceptions.Handler;

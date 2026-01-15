@@ -1,5 +1,4 @@
 ﻿namespace Catalog.API.Products.CreateProduct;
-
 public record GetProductsRequest(int? PageNumber, int? PageSize = 10);
 public record GetProductsResponse(IEnumerable<Product> Products);
 

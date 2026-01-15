@@ -1,7 +1,4 @@
-﻿
-using Catalog.API.Products.CreateProduct;
-
-namespace Catalog.API.Products.UpdateProduct;
+﻿namespace Catalog.API.Products.UpdateProduct;
 
 public record UpdateProductCommand(Guid Id, string Name, List<string> Category, string Description, string ImageFile, decimal Price)
     : ICommand<UpdateProductResult>;
@@ -39,7 +36,7 @@ internal class UpdateProductHandler
         product.Price = command.Price;
 
         session.Update(product);
-        await session.SaveChangesAsync();
+        await session.SaveChangesAsync(cancellationToken);
 
         return new UpdateProductResult(true);
     }

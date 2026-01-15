@@ -1,5 +1,4 @@
-﻿using Marten.Linq.QueryHandlers;
-namespace Catalog.API.Products.CreateProduct;
+﻿namespace Catalog.API.Products.CreateProduct;
 
 public record GetProductsQuery(int? PageNumber, int? PageSize = 10) : IQuery<GetProductsResult>;
 public record GetProductsResult(IEnumerable<Product> Products);

@@ -1,7 +1,5 @@
 ﻿
-using Basket.API.Data;
 using Discount.Grpc;
-using System.Runtime.CompilerServices;
 
 namespace Basket.API.Basket.GetBasket;
 
